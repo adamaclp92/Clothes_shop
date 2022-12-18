@@ -15,7 +15,7 @@ const CategoryItem = ( props ) => {
         <div
           className={styles["background-image"]}
           style={{
-            backgroundImage: `url(${props.imageUrl})`,
+            backgroundImage: `${props.imageUrl}`,
           }}
         />
         <div className={styles["category-body-container"]} onClick={goToCategory}>
