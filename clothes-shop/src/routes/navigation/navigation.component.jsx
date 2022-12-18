@@ -1,4 +1,4 @@
-import { Fragment, useContext, useState} from "react";
+import { Fragment, useContext} from "react";
 import { Link, Outlet } from "react-router-dom";
 import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
@@ -21,7 +21,6 @@ const Navigation = () => {
     setCurrentUser(null)
   
   } 
-  console.log(currentUser)
 
   return (
     <Fragment>
@@ -30,9 +29,6 @@ const Navigation = () => {
           <CrwnLogo />
         </Link>
         <div className="nav-links-container">
-          <Link className="nav-link" to="projects">
-            PROJECTS
-          </Link>
           <Link className="nav-link" to="shop">
             SHOP
           </Link>

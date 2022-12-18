@@ -14,7 +14,7 @@ export const ProductsProvider = ({children}) => {
 
      useEffect(() => {
         //addCollectionAndDocuments('collections', SHOP_DATA);
-        postProducts(SHOP_DATA)
+       // postProducts(SHOP_DATA)
     
    }, []);
 
